@@ -59,16 +59,16 @@
             </div>
 
             <div id="login-container" class="hidden">
-                <form action="login.html" name="login" method="post" id="login-form" >
+                <form action="login.html" name="login" onsubmit="return(validateLogin())" method="post" id="login-form" >
                     <table cellspacing = "2" cellpadding = "2" border = "1">
                         <th>Login</th>
                         <tr>
-                            <td><label for="email">Email</label></td>
-                            <td><input type="text" id="email" required></td>
+                            <td><label for="logEmail">Email</label></td>
+                            <td><input type="text" id="logEmail" required></td>
                         </tr>
                         <tr>
-                            <td><label for="pass">Password</label></td>
-                            <td><input type="text" id="pass" required></td>
+                            <td><label for="logPass">Password</label></td>
+                            <td><input type="text" id="logPass" required></td>
                         </tr>
                         <td><input type = "submit" value = "Submit" /></td>
                     </table>
