@@ -2,9 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Basic HTML Template</title>
+        <title>Beers</title>
         <link rel="stylesheet" href="/styles/main.css">
-        <script src="/product.js"></script>
+        
     </head>
     <body>
         <header>
@@ -19,10 +19,12 @@
         <div class="main-container">
             <h2>Products</h2>
 
-            <div id="beers" onclick="viewBeers()">
-                View Beers
-            </div>
+            <div  onclick="viewBeers()">View Beers</div>
+            <table id="beers" cellspacing = "2" cellpadding = "2" border = "1">
+
+            </table>
+
         </div>
     </body>
-    <script src="./scripts/script.js"></script>
+    <script src="../product.js"></script>
 </html>
