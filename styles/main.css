@@ -1,3 +1,8 @@
+html{
+  background-color: #f2f2f2;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 /* The navigation bar */
 .navbar {
     overflow: hidden;
@@ -16,7 +21,9 @@
     padding: 14px 16px;
     text-decoration: none;
   }
-  
+  .current-page {
+    background-color: #666;
+  }
   /* Change background on mouse-over */
   .navbar a:hover {
     background: #ddd;
@@ -25,5 +32,44 @@
   
   /* Main content */
   .main-container {
-    margin-top: 60px; /* Add a top margin to avoid content overlay */
+    margin-top: 30px; 
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .container{
+    background-color: #cccccc;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: auto;
+    padding: 20px;
+    max-width: fit-content;
+  }
+  table {
+    margin:auto;
+  }
+  .title{
+    color: rgb(70, 30, 130);
+    font-size: 40px;
+  }
+/* Forms */
+  input[type=text], select, textarea {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #519754;
+    color: white;
+    padding: 12px 20px;
+    margin: auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 80%;
   }
