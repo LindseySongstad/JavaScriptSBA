@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Register/Login</title>
     <link rel="stylesheet" href="../styles/main.css">
-
-    <script src="../script.js"></script>
-    <script src="../formValidation.js"></script>
     <style>
         .hidden {
             display: none;
@@ -20,12 +17,11 @@
     <header>
         <nav class="navbar">
             <a href="index.html"> Home </a>
-
             <a href="login.html" class="current-page"> Login/Register </a>
-
             <a href="product.html"> Beers </a>
         </nav>
     </header>
+
     <div class="main-container">
         <h2 class="title" id="login-title">Login/Register</h2>
 
@@ -36,28 +32,22 @@
             </select>
 
             <div id="register-container" >
-
                 <form action="login.html" name="register" onsubmit="return(validateRegister());" method="post"
                     id="register-form" class="form">
                     <br><br>
                     <input placeholder="First Name" type="text" id="fname" name="Fname" required>
-
                     <br><br>
                     <input placeholder="Last Name" type="text" id="lname" name="Lname" required>
-
                     <br><br>
                     <input placeholder="Email Address" type="text" id="email" name="Email" required>
-
                     <br><br>
-                    <td><input placeholder="Password" type="text" id="pass" name="Pass" required><br><br>
-
-                        <input type="submit" value="Submit" />
-
+                    <td><input placeholder="Password" type="text" id="pass" name="Pass" required>
+                    <br><br>
+                    <input type="submit" value="Submit" />
                 </form>
             </div>
 
             <div id="login-container" class="hidden">
-
                 <form action="login.html" name="login" onsubmit="return(validateLogin())" method="post" id="login-form">
                     <br><br>
                     <input placeholder="Email Address" type="text" id="logEmail" required>
@@ -71,7 +61,5 @@
         </div>
     </div>
 </body>
-<script src="/scripts/script.js"></script>
-<script src="/scripts/formValidation.js"></script>
-
+<script src="../scripts/login.js"></script>
 </html>
