@@ -3,8 +3,7 @@ var beers = [
     {Image: "ipa", Name: "Homegrown IPA", Style: "IPA", ABV: '5.5'},
     {Image: "imperial-ipa", Name: "Just a Tribute", Style: "Imperial IPA", ABV: '8.0'},
     {Image: "red", Name: "Old Big Red", Style: "Imperial Red", ABV: '7.5'},
-    {Image: "belgian", Name: "Manneken Pis", Style: "Belgian Golden Ale", ABV: '7.8'}
-    
+    {Image: "belgian", Name: "Manneken Pis", Style: "Belgian Golden Ale", ABV: '7.8'}   
 ]
 
 function viewBeers(){
@@ -21,7 +20,6 @@ function viewBeers(){
             let beerCol = document.createElement("td");
             if(key === "Image"){
                 let image = document.createElement("img");
-                //image.src="./" + beers[beersI][key]+ ".jpg";
                 image.src = "../images/" + beers[beersI][key] + ".jpg"
                 image.width = "100";
                 beerCol.appendChild(image) 
@@ -29,8 +27,7 @@ function viewBeers(){
             else{
                 beerCol.innerHTML = beers[beersI][key];
             }
-            beerRow.appendChild(beerCol);
-            
+            beerRow.appendChild(beerCol);  
         }
         document.getElementById("beers").appendChild(beerRow);
     }

@@ -1,5 +1,4 @@
 
-
 function validateRegister() {
     let flag = true;
     var firstNameValue = document.getElementById("fname").value;
